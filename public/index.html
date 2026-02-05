@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weekly Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Weekly Weather</p>
+          <h1>Know what the week will feel like</h1>
+          <p>
+            Enter any city or coordinates and get a 7-day outlook powered by Open-Meteo.
+          </p>
+        </div>
+        <form id="location-form">
+          <label for="location-input">City or latitude,longitude</label>
+          <div class="input-row">
+            <input
+              id="location-input"
+              name="location"
+              type="text"
+              placeholder="e.g. Taipei or 25.03,121.56"
+              required
+            />
+            <button type="submit">Fetch forecast</button>
+          </div>
+          <p class="helper">City names use Open-Meteo geocoding; exact coordinates skip a lookup.</p>
+        </form>
+        <div id="location-hint" class="hint"></div>
+      </section>
+
+      <section id="forecast" class="forecast"></section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

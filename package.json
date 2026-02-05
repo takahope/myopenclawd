@@ -1,0 +1,20 @@
+{
+  "name": "weekly-weather-app",
+  "version": "1.0.0",
+  "description": "Simple weekly weather forecast interface powered by Open-Meteo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "weather",
+    "forecast",
+    "open-meteo",
+    "express"
+  ],
+  "author": "K.I. HOPE",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
